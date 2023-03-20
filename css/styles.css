@@ -179,6 +179,8 @@ img {
     border-radius: 4px;
     text-align: center;
     padding: 24px;
+    display: flex;
+    justify-content: center;
 }
 
 .skill-text {
@@ -241,12 +243,6 @@ img {
     padding-bottom: 32px;
     background-color: #FFFFFF;
 }
-.container-team-svg {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 8px;
-}
 .team-list {
     display: flex;
     gap: 24px;
@@ -264,6 +260,31 @@ img {
     margin: 0;
     padding: 0;
 }
+.team-list-svg {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+.team-ikon {
+
+}
+
+.team-item-svg {
+    width: 40px;
+    height: 40px;
+}
+
+.team-link-svg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*-------------------SERCH------------------*/
 .serch {
    padding-bottom: 120px;
@@ -387,9 +408,31 @@ img {
     color: #2e2f42;
     margin: 120px 0px 0 0;
 }
-.customers-list {}
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 120px;
+    margin-top: 72px;
+}
+.customers-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customers-ikon {
 
-.customers-item {}
+}
+
+.customers-item {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    text-align: center;
+    width: 168px;
+    height: 88px;
+}
 .container-customers-svg {
     display: flex;
     justify-content: center;
@@ -404,6 +447,7 @@ img {
     background: #2E2F42;
 }
 .container-footer{
+    display: flex;
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -436,4 +480,40 @@ img {
     height: 72px;
     margin: 0;
 }
+.footer-list-svg {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.footer-item-svg {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-link-svg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-title {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.container-footer-content {
+    margin-left: 120px;
+}
+
+.footer-ikon {}
 /*-------------------FOOTER END------------------*/
