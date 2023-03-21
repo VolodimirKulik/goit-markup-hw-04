@@ -118,7 +118,7 @@ img {
     text-align: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1440px;
 }
 
 .service-title {
@@ -284,12 +284,16 @@ img {
     align-items: center;
     justify-content: center;
 }
+.team-link-svg:hover{
+    background: #404BBF;
+}
 
 /*-------------------SERCH------------------*/
 .serch {
    padding-bottom: 120px;
    padding-top: 96px;
 }
+
 .serch-title {
     font-size: 56px;
     line-height: 1.07;
@@ -366,6 +370,9 @@ img {
     padding-left: 16px;
 }
 .catalog-item{
+}
+.catalog-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .catalog-title {
     font-family: 'Roboto', sans-serif;
