@@ -148,6 +148,7 @@ img {
 }
 .service-btn:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #404BBF;
 }
 
 .skill {
@@ -428,11 +429,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    fill: #8e8f99;
 }
-.customers-ikon {
-
+.customers-link:hover{
+    fill: #404BBF;
 }
-
 .customers-item {
     border: 1px solid #8E8F99;
     border-radius: 4px;
@@ -440,6 +441,10 @@ img {
     width: 168px;
     height: 88px;
 }
+.customers-item:hover{
+    border: 1px solid #404BBF;
+}
+
 .container-customers-svg {
     display: flex;
     justify-content: center;
@@ -507,6 +512,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.footer-link-svg:hover{
+    background-color: #31D0AA;
 }
 .footer-title {
     margin: 0;
