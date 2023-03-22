@@ -112,6 +112,7 @@ img {
 }
 /*-------------------HEADER END------------------*/
 .service {
+    width: 1440px;
     background-position: center;
     display: block;
     margin: 0 auto;
