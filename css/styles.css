@@ -81,6 +81,19 @@ img {
     order: 0;
     flex-grow: 0;
 }
+.current {
+    color: #404bbf
+}
+.current::after{
+    content: '';
+    height: 4px;
+    border-radius: 2px;
+    display: block;
+    background: #404BBF;
+    position: relative;
+    top: 23px;
+}
+
 .header-link:hover{
     color:#404bbf;
 }
@@ -110,6 +123,7 @@ img {
 .header-connect-link:focus {
     color: #404BBF;
 }
+
 /*-------------------HEADER END------------------*/
 .service {
     max-width: 1440px;
@@ -376,6 +390,9 @@ img {
 }
 .catalog-item{
 }
+.catalog-item:hover .catalog-cover-text {
+    transform: translateY(0);
+}
 .catalog-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -408,6 +425,30 @@ img {
 }
 .catalog-link{
     text-decoration: none;
+}
+.catalog-cover-container{
+    position: relative;
+    overflow: hidden;
+}
+.catalog-cover-text{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    background: #4D5AE5;
+    mix-blend-mode: normal;
+    margin: 0 auto;
+    padding: 40px;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
 }
 /*-------------------CATALOG END------------------*/
 .customers {}
@@ -536,3 +577,46 @@ img {
 
 .footer-ikon {}
 /*-------------------FOOTER END------------------*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0303035a;
+}
+.modal {
+    width:408px;
+    min-height:576px;
+    padding: 25px 23px;
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-btn {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-left: auto;
+    box-sizing: border-box;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.close-svg{
+    width: 8px;
+    height: 8px;
+    display: block;
+    position: static;
+    margin: 0 auto;
+    display: block;
+}
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
